@@ -8,7 +8,7 @@ label {
     margin: 0;
     padding: 0;
 }
-.fuente2 {
+.fuentes1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ label {
     font-weight: 100;
     
 }
-.fuente2 {
+.fuentes1 {
    font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -38,4 +38,3 @@ label {
          url('../fonts/bebas-neue-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/bebas-neue-v9-latin-regular.svg#BebasNeue') format('svg'); /* Legacy iOS */
   }
-

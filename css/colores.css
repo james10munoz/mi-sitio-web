@@ -1,0 +1,12 @@
+.box-colores {
+    display: flex;
+    flex-direction: row;
+}
+.box-style {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
