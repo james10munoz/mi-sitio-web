@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma, sans-serif;
+}
+nav {
+    background-color: rgb(48, 48, 48, .8);
+    font-size: 1.3rem;
+    width: 100%;
+}
+nav ul {
+    width: 100%;
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(48, 48, 48, .8);
+}
+/* Primer Menu*/
+.first-item {
+    margin-left: 50px;
+}
+nav > ul > li {
+    display: inline-block;
+    width: 250px;
+    line-height: 70px;
+    cursor: pointer;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+ul li {
+    position: relative;
+}
+nav>ul>li:hover{
+    background-color: goldenrod;
+    cursor: pointer;
+    
+}
+/* Segundo Nivel*/
+nav li li {
+    max-height: 0;
+    overflow: hidden;
+}
+nav li:hover > ul > li {
+    max-height: 500px;
+    overflow: visible;
+    text-align: center;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+nav li > ul > li:hover {
+    background-color: goldenrod;
+    cursor: pointer;
+}
+/* Tercer Nivel*/
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+}

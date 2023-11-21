@@ -1,0 +1,15 @@
+.box-1 {
+    width: 400px;
+    height: 700px;
+    border-radius: 25px;
+    background-color: goldenrod;
+    transition: width 1s;
+    position: fixed;
+    
+}
+.box-1:hover {
+    width: 900px;
+    height: 400px;
+    background-color: darkcyan;
+    cursor: pointer;
+}

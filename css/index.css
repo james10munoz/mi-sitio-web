@@ -1,0 +1,16 @@
+h1{
+    color: rgb(172, 138, 138);
+    text-align: center;
+    -ms-hyphens: auto;
+}
+
+.boton {
+    border: 3px solid #080808; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #2d74e7; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+}

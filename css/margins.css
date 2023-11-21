@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+}
+.box-style {
+    width: 250px;
+    margin: 20px;
+    display: inline-block;
+    padding: 15px 30px;
+    text-align: justify;
+    font-size: 1.3em;
+    letter-spacing: 0;
+    word-spacing: 0;
+    line-height: 1.4em;
+}
+.box-1 {
+   border: 10px solid rgb(64, 64, 64, 9);
+   background-color: aqua;
+}
+/* Borde dashed*/
+.box-2 {
+    border: 2px dashed darkcyan;
+    background-color: rgb(96, 87, 125);
+}
+/* Borde dotted*/
+.box-3 {
+    border: 2px dotted goldenrod;
+    background-color: lemonchiffon;
+}
+.box-4 {
+    border: 2px double black;
+    
+}

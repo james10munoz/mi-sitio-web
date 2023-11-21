@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="icons/all.css.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="box-subtotal">
+            <label>Subtotal cop</label>
+            <label id="subtotal">0</label>
+        </div>
+        <div class="box-proceder-pago">
+            <label>Proceder al Pago </label>
+            <label id="numeroProductos"> (0 Productos)</label>
+        </div>
+        <div class="product-content">
+            <div class="box-img-producto">
+                <img src="img/book-python.jpg" alt="">
+            </div>
+            <div class="box-info-producto">
+                <h3 class="book-title">Python Programin and SQL: 5 books in 1</h3>
+                <label class="book-dsecription">The #1 Coding Course from Begginner to Adtanceo</label>
+                <label class="box-autor">Por Mark Reed</label>
+                <label class="cover-type">Tapa Dura</label>
+                <label class="signo-precio-unidad">cop <span id="precioUnidad" class="precio-unidad">$</span></label>
+            </div>
+            <div class="box-buttons-cantidad">
+                <div id="boxMinus" class="box-minus">
+                    <i>-</i>
+                </div>
+                <div id="boxCantidad" class="box-cant">0</div>
+                <div id="boxPlus" class="box-plus">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/carrito.js"></script>
+</body>
+</html>

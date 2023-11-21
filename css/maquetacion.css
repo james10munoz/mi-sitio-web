@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    width: 100%;
+    grid-template: "empty-left            main-page           empty-right" 100vh / 
+                    minmax(30px, 1fr)     minmax(700px, 1200px)  minmax(30px, 1fr);
+}
+.mane-page {
+    grid-area: main-page;
+}
+header{
+    display: grid;
+    margin-top: 50px;
+    gap: 30px;
+    grid-template: "logo main-menu" 80px/
+                    150px minmax(700px, 100%);
+}
+.logo {
+    grid-area: logo;
+    background-color: goldenrod;
+}
+.main-menu{
+    grid-area: main-menu;
+    background-color:  rgb(4, 111, 219);
+}
+.style-text {
+    font-family: verdana, sans-serif;
+    font-size: 1.6em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content {
+    display: grid;
+    margin-top: 15px;
+    gap: 40px 60px;
+    grid-template: "main-img     main-img    main-img" 600px
+                    "article-1   article2     article3"
+                    "article-4   article5     article6" /
+                    1fr          1fr          1fr;
+}
+.main-img {
+    grid-area: main-img;
+    background-color: darkcyan;
+}
+.article-1 {
+    grid-area: article-1;
+}
+.article-2 {
+    grid-area: article-2;
+}
+.article-3 {
+    grid-area: article-3;
+}
+.article-1 {
+    grid-area: article-4;
+}
+.article-2 {
+    grid-area: article-5;
+}
+.article-3 {
+    grid-area: article-6;
+}    
+.img-article{
+    height: 300px;
+    background-color: rgb(64, 64, 64, 8);
+}
+.style-text-article{
+    color: rgb(48, 48, 48, 9);
+    font-family: Verdana, sans-serif;
+    line-height: 1.4em;
+    display: flex;
+    text-align: justify;
+}

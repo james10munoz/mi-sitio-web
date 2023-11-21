@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    border: 1px solid rgb(0, 0, 0);
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: repeat(7, 70px);
+    grid-gap: 10px 20px;
+}
+.contenedor .inicio {
+    grid-column-start: 4;
+}
+.box {
+    background-color: rgb(173, 162, 162);
+    padding: 10px;
+}
+.dia {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.festivo {
+    background-color: brown;
+    color: white;
+}
+.mes{
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    border-bottom: 1px solid black;
+    font-size: 35px;
+    text-align: center;
+}
