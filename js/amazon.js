@@ -26,6 +26,11 @@ function openModal() {
     modal.style.visibility = 'visible';
 }
 
-// Asignar el evento clic al icono de cierre
+// Asignar el evento clic al icono de cierr
 closeIcon.addEventListener('click', closeModal);
 produc.addEventListener('click', openModal);
+
+
+/*    hubhjk*/ 
+
+
