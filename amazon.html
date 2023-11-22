@@ -3,119 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon.com</title>
-    <link rel="shortcut icon" href="img/favicon-amazon.png" type="image/x-icon">
+    <title>Amazon</title>
     <link rel="stylesheet" href="css/amazon.css">
-    <link rel="stylesheet" href="icons/all.css.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <link rel="shortcut icon" href="img/favicon-amazon.png" type="image/x-icon">
 </head>
 <body>
-    <div id="navbar">
-        <h1><img src="img/amazon.png" alt=""><img src="img/ubicacion.png" alt=""></h1>
-        <div class="barra">
-         <select class="select" id="">
-         <option value="a">todos</option>
-         <option value="s"></option>
-        </select>
-        <input class="inp" type="text">
-        <button class="boton"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>       
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Prime</a></li>
-            <li><a href="#">Atención al Cliente</a></li>
-        </ul>
-     </div>
+   <div id="navbar">
+       <h1><img src="img/amazon.png" alt=""><img src="img/ubicacion.png" alt=""></h1>
+       <div class="barra">
+        <select class="select" id="">
+        <option value="a">Todos</option>
+        <option value="s"></option>
+       </select>
+       <input class="inp" type="text">
+       <button class="boton"><i class="fa-solid fa-magnifying-glass"></i></button>
+       </div>
+       
+       
+       <ul>
+           <li><a href="#">Inicio</a></li>
+           <li><a href="#">Productos</a></li>
+           <li><a href="#">Ofertas</a></li>
+           <li><a href="#">Prime</a></li>
+           <li><a href="#">Atención al Cliente</a></li>
+       </ul>
+    </div>
 
-
-    <div id="mainContent" class="main-content">
-        <div class="fondo">
-
-            <div class="conten">
-                <div class="div-lista">
-                    <div class="list-product">
-                        <div><img class="lista-img" src="img/amazon1.png" alt=""></div>
-                    </div>
-                    <div class="list-product">
-                        <div><img class="lista-img" src="img/amazon2.png" alt=""></div>
-                    </div>
-                    <div class="list-product">
-                        <div><img class="lista-img" src="img/amazon3.png" alt=""></div>
-                    </div>
-                    <div class="list-product">
-                        <div><img class="lista-img" src="img/amazon4.png" alt=""></div>
-                    </div>
+    <div id="mainContent" class="mainContent">
+        <div class="box-modal" id="box-modal">
+            <div class="modal" id="modal">
+                <!-- img principal -->
+                <div class="main-img-principal">
+                    <img src="img/amazon1.png" class="img-modal1" id="imgPrincipal">
                 </div>
-                <div class="produc">
-                    <img class="principal-1" src="img/amazon1.png" alt="">
-                </div>
-                <div class="info-principal"></div>
-
-            <div class="infoproduc">
-                <span class="info">Evike Airsoft - CYMA - Compatible con AEG Mag, tamaño completo M.4 Airsoft SPR.ing Powered Ri.fle</span>
-                <span class="info2">Marca:  Evike</span>
-                <span class="info3"> 
-                    4.8 <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                    <a href="#" class="calificacione">109 calificaciones</a></span>
-                <span>| <a class="info4" href="#">10 preguntas respondidas</a></span>
-                <span class="info5">100+ comprados el mes pasado</span>
-                <hr>
-            </div>
-            
-            <div class="precioprodu">
-                <span><span class="dolar">US$</span><span  class="precio">64</span> <span class="dolar"> 89</span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        </div> 
-        </div>
-
-
-           
-
-        <div class="box-modal">
-            <div class="modal">
-                <div class="btn-close">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <div class="box-video-imagenes">
-                    <div class="video-imagenes">
-                        <ul>
-                            <li><a id="optionVideos" class="option-videos">VIDEOS</a></li>
-                            <li><a id="optionImagenes" class="option-imagenes option-selected">IMÁGENES</a></li>
-                        </ul>
+                <!-- informacion del producto -->
+                <div class="info-product">
+                    <span class="txt-caracteristicas-modal">
+                       Evike Airsoft - CYMA - Compatible con AEG Mag, tamaño completo M.4 Airsoft SPR.ing Powered Ri.fle (Modelo: M.4 S-System)</span>
+                    <!-- imagenes -->
+                    <div class="thubnails" id="thubnails">
+                        <div class="thub thub-1" id="imgtub1">
+                            <img src="img/amazon1.png" class="img-thub">
+                        </div>
+                        <div class="thub thub-2 " id="imgtub2">
+                            <img src="img/amazon2.png" class="img-thub">
+                        </div>
+                        <div class="thub thub-3" id="imgtub3">
+                            <img src="img/amazon3.png" class="img-thub">
+                        </div>
+                        <div class="thub thub-4" id="imgtub4">
+                            <img src="img/amazon4.png" class="img-thub">
+                        </div>
                     </div>
-                </div>
-                
-                <div class="img">
-                    <img class="ama1" src="img/amazon1.png" alt="">
-                </div>
-                <div class="info-modal">
-                    <div class="box-info">
-                        <p>Jada Toys Just Trucks 1:24 Toyota FJ Cruiser - Coche fundido a presión marrón con estante para neumáticos, juguetes para niños y adultos</p>
+
+                    <!-- equis -->
+                    <div class="btn-close" id="btnclose">
+                        <i class="icon-close fa-solid fa-xmark"></i>
                     </div>
-                    <div class="box-images">
-                        <div class="imgs box-imgs1"><img class="imgs1" src="img/amazon1.png" alt=""></div>
-                        <div class="imgs box-imgs2"><img class="imgs2" src="img/amazon2.png" alt=""></div>
-                        <div class="imgs box-imgs3"><img class="imgs3" src="img/amazon3.png" alt=""></div>
-                        <div class="imgs box-imgs4"><img class="imgs4" src="img/amazon4.png" alt=""></div>
-                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+    <!--Fondo todo-->  
+    <div class="fondo">
+        <div class="imgpeque" id="imgpeque">
+            <div onclick="abrir()" class="img img-1" id="img1">
+                <img src="img/amazon1.png" class="imgfondo">
+            </div>
+            <div onclick="abrir()" class="img img-2" id="img2" >
+                <img src="img/amazon2.png" class="imgfondo">
+            </div>
+            <div onclick="abrir()" class="img img-3" id="img3">
+                <img src="img/amazon3.png" class="imgfondo">
+            </div>
+            <div onclick="abrir()" class="img img-4" id="img4">
+                <img src="img/amazon4.png" class="imgfondo">
+            </div>
+        </div>
+        <div class="imgprin">
+            <img src="img/amazon1.png" class="princi">
+        </div>
+  
+        <div class="infoproduc">
+            <span class="info">Evike Airsoft - CYMA - Compatible con AEG Mag, tamaño completo M.4 Airsoft SPR.ing Powered Ri.fle</span>
+            <span class="info2">Marca:  Evike</span>
+            <span class="info3"> 
+                4.8 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                <a href="#" class="calificacione">109 calificaciones</a></span>
+            <span>| <a class="info4" href="#">10 preguntas respondidas</a></span>
+            <span class="info5">100+ comprados el mes pasado</span>
+            <hr>
+        </div>
+        
+        <div class="precioprodu">
+            <span><span class="dolar">US$</span><span  class="precio">64</span> <span class="dolar"> 89</span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
     
-
-
     <script src="js/amazon.js"></script>
-
-    
 </body>
+
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificacion</title>
+    <link rel="stylesheet" href="./css/calificacion.css">
+</head>
+<body>
+    <div>
+        <div>
+            <label for="">5 Estrellas</label>
+            <input type="number" id="input-5" value="0">
+        </div>
+        <div>
+            <label for="">4 Estrellas</label>
+            <input type="number" id="input-4" value="0">
+        </div>
+        <div>
+            <label for="">3 Estrellas</label>
+            <input type="number" id="input-3" value="0">
+        </div>
+        <div>
+            <label for="">2 Estrellas</label>
+            <input type="number" id="input-2" value="0">
+        </div>
+        <div>
+            <label for="">1 Estrellas</label>
+            <input type="number" id="input-1" value="0">
+        </div>
+        <br>
+        <br>
+        <p id="resultado"></p>
+        <br>
+        <div class="cal-box">
+            <div class="cal">
+                <div id="resultado_cinco"></div>
+            </div>
+            <div class="cal">
+                <div id="resultado_cuatro"></div>
+            </div>
+            <div class="cal">
+                <div id="resultado_tres"></div>
+            </div>
+            <div class="cal">
+                <div id="resultado_dos"></div>
+            </div>
+            <div class="cal">
+                <div id="resultado_uno"></div>
+            </div>
+        </div>
+        <button id="btn-resultado">Mostrar Calificaciones</button>
+    </div>
+
+    <script>
+        var input_cinco = document.querySelector("#input-5")
+        var input_cuatro = document.querySelector("#input-4")
+        var input_tres = document.querySelector("#input-3")
+        var input_dos = document.querySelector("#input-2")
+        var input_uno = document.querySelector("#input-1")
+        var btn_resultado = document.querySelector("#btn-resultado")
+        var resultado = document.querySelector("#resultado")
+
+        var barra_cinco = document.querySelector("#resultado_cinco")
+        var barra_cuatro = document.querySelector("#resultado_cuatro")
+        var barra_tres = document.querySelector("#resultado_tres")
+        var barra_dos = document.querySelector("#resultado_dos")
+        var barra_uno = document.querySelector("#resultado_uno")
+        var resultado_interno;
+
+
+        btn_resultado.addEventListener("click", function() {
+            resultado_interno = parseInt(input_cinco.value) + parseInt(input_cuatro.value) + parseInt(input_tres.value) + parseInt(input_dos.value) + parseInt(input_uno.value)
+            resultado.innerHTML = resultado_interno
+
+            var total_cinco = parseInt(input_cinco.value) * 100 / resultado_interno
+            barra_cinco.style.width = `${total_cinco}%`
+
+            var total_cuatro = parseInt(input_cuatro.value) * 100 / resultado_interno
+            barra_cuatro.style.width = `${total_cuatro}%`
+
+            var total_tres = parseInt(input_tres.value) * 100 / resultado_interno
+            barra_tres.style.width = `${total_tres}%`
+
+            var total_dos = parseInt(input_dos.value) * 100 / resultado_interno
+            barra_dos.style.width = `${total_dos}%`
+
+            var total_uno = parseInt(input_uno.value) * 100 / resultado_interno
+            barra_uno.style.width = `${total_uno}%`
+
+        })
+
+
+    </script>
+</body>
+</html>

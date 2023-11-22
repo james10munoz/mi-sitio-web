@@ -1,36 +1,33 @@
-// Obtener referencias a las imágenes y al contenedor principal
-const mainImage = document.querySelector('.ama1');
-const images = document.querySelectorAll('.box-images img');
+let imgtub1 = document.getElementById("imgtub1");
+let imgtub2 = document.getElementById("imgtub2");
+let imgtub3 = document.getElementById("imgtub3");
+let imgtub4 = document.getElementById("imgtub4");
+let imgMain = document.getElementById("imgPrincipal");
+let boxmodal = document.getElementById("box-modal");
+let modal = document.getElementById("modal");
+let mainContent = document.getElementById("mainContent");
+let btnclose = document.getElementById("btnclose");
 
-// Función para mostrar la imagen seleccionada en el contenedor principal
-function showImage(event) {
-    const selectedImageSrc = event.target.src;
-    mainImage.src = selectedImageSrc;
+window.onload = () => {
+  boxmodal.classList.remove("visible")
 }
-
-// Asignar el evento clic a cada imagen de la galería
-images.forEach(image => {
-    image.addEventListener('click', showImage);
+imgtub1.addEventListener("click",() => {
+  imgMain.setAttribute("src", "img/amazon1.png");
+});
+imgtub2.addEventListener("click",() => {
+  imgMain.setAttribute("src", "img/amazon2.png");
+});
+imgtub3.addEventListener("click",() => {
+  imgMain.setAttribute("src", "img/amazon3.png");
+});
+imgtub4.addEventListener("click",() => {
+  imgMain.setAttribute("src", "img/amazon4.png");
 });
 
-// Obtener referencia al icono de cierre
-const closeIcon = document.querySelector('.fa-xmark');
-const modal = document.querySelector('.box-modal');
-const produc = document.querySelector('.produc');
+btnclose.addEventListener("click", function() {
+  mainContent.style.display = "none";
+});
 
-// Función para ocultar el modal al hacer clic en el icono de cierre
-function closeModal() {
-    modal.style.visibility = 'hidden';
+function abrir(){
+  boxmodal.classList.add("visible")
 }
-function openModal() {
-    modal.style.visibility = 'visible';
-}
-
-// Asignar el evento clic al icono de cierr
-closeIcon.addEventListener('click', closeModal);
-produc.addEventListener('click', openModal);
-
-
-/*    hubhjk*/ 
-
-
