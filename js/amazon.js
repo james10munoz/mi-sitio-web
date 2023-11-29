@@ -27,6 +27,9 @@ imgtub4.addEventListener("click",() => {
 btnclose.addEventListener("click", function() {
   mainContent.style.display = "none";
 });
+close.addEventListener("click", function() {
+  modal.classList.remove("visible")
+})
 
 function abrir(){
   boxmodal.classList.add("visible")
