@@ -8,7 +8,7 @@ body {
     background-color: rgb(19, 25, 33);
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     padding: 10px 20px;
     height: 50px;
@@ -90,6 +90,13 @@ body {
     align-items: center;
     /* background-color: rgba(78, 75, 75, 0.623); */
     z-index: 10;
+  }
+  .li-juguet{
+    font-size: small;
+    margin-left: 25px;
+  }
+  .p-juguet{
+    color: black;
   }
   .modal {
     margin-top: 10px;
@@ -179,11 +186,14 @@ body {
     margin: 20px;
     margin-top: 70px;
     display: grid;
+    max-width: 1500px;
+    margin: auto;
+    grid-gap: 10px;
     grid-template: "imgfondo    imgprin   infoproduc precioprodu" /
-                      150px      250px     450px        300px;
+                      60px      500px     1fr        200px;
   }
   .imgfondo{
-    width: 70%;
+    grid-area: imgfondo;    width: 70%;
     object-fit: contain;
     padding: 2px;
   }
@@ -206,15 +216,16 @@ body {
   .img:hover{
     border: 2px solid rgb(149, 155, 226);
   }
-  .princi{
+  .imgprin{
     grid-area: imgprin;
+  }
+  .princi{
+    
+    width: 100%;
     height: 400px;
   }
   .infoproduc{
     grid-area: infoproduc;
-    margin-left: 280px;
-    margin-right: -100px;
-    margin-top: 20px;
   }
   .info{
     font-size: 25px;
@@ -264,11 +275,10 @@ body {
     color: rgb(255, 164, 28); 
   }
   .precioprodu{
+    grid-area: precioprodu;
     padding: 20px;
     font-size: 1.3em;
     border-radius: 10px;
-    margin-left: 100px;
-    margin-right: -100px;
     color: rgb(79, 24, 131);
   }
   .dolar{
@@ -285,6 +295,13 @@ body {
     display: block;
     text-decoration: none;
     font-size: 16px;
+  }
+  .container-prin{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1500px;
   }
 
   
